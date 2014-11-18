@@ -21,6 +21,9 @@
         <td><%= employment.person.full_name %></td>
         <td><%= employment.job_title.name %></td>
         <td><%= employment.location.name %></td>
+        <td>
+          <%= link_to "Edit", edit_employment_path(employment) %>
+        </td>
       </tr>
     <% end %>
   </tbody>
